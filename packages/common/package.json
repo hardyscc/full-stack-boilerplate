@@ -1,0 +1,17 @@
+{
+  "name": "@boilerplate/common",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "devDependencies": {
+    "@types/yup": "^0.26.2",
+    "typescript": "~3.1.6"
+  },
+  "dependencies": {
+    "yup": "^0.26.6"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}

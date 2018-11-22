@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "build:server": "lerna run build --scope={@boilerplate/common,@boilerplate/server}"
+  },
+  "devDependencies": {
+    "lerna": "^2.11.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "prettier": {
+    "singleQuote": true
+  }
+}
