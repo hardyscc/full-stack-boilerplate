@@ -8,7 +8,7 @@ import { createTypeormConn } from './createTypeormConn';
 import { createSchema } from './createSchema';
 import { MyContext } from './context';
 import { redis } from './redis';
-import { RedisClient } from 'redis';
+
 // @todo move to .env
 const SESSION_SECRET = 'ajslkjalksjdfkl';
 const port = 4000;
@@ -20,10 +20,7 @@ const startServer = async () => {
 
   const server = new ApolloServer({
     schema: createSchema(),
-    context: ({ req, res }: MyContext) => ({
-      req,
-      res
-    })
+    context: ({ req, res }: MyContext) => ({ req, res })
   });
 
   const app = express();

@@ -5,12 +5,7 @@ import { MutationResolvers } from '../../../types';
 import { User } from '../../../entity/User';
 
 const invalidLoginResponse = {
-  errors: [
-    {
-      path: 'password',
-      message: 'invalid login'
-    }
-  ],
+  errors: [{ path: 'password', message: 'invalid login' }],
   user: null
 };
 
