@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "build:server": "lerna run build --scope={@boilerplate/common,@boilerplate/server}"
+    "build:server": "lerna run build --scope={@boilerplate/common,@boilerplate/server}",
+    "build:web": "lerna run build --scope={@boilerplate/common,@boilerplate/web}"
   },
   "devDependencies": {
     "lerna": "^3.4.3"
