@@ -4,7 +4,7 @@
     "build:server": "lerna run build --scope={@boilerplate/common,@boilerplate/server}"
   },
   "devDependencies": {
-    "lerna": "^2.11.0"
+    "lerna": "^3.4.3"
   },
   "workspaces": [
     "packages/*"
